@@ -2,6 +2,11 @@ jobs:
   include:
     - os: windows
       language: shell
+      env:
+        - ENV_VAR_1=1
+        - ENV_VAR_2=2
       script:
         - export PATH="/c/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin":$PATH
         - MSBuild.exe
+
+# empty comment
